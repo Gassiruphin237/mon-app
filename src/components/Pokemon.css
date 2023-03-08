@@ -1,0 +1,21 @@
+.container{
+    margin-top: 60px;
+}
+.container .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+@media  (min-width: 320px) and (max-width: 600px) { 
+   .container  .row{
+        grid-template-columns: 1fr;
+    }
+ }
+
+ @media  (min-width: 600px) and (max-width: 1024px) { 
+   .container .row{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
