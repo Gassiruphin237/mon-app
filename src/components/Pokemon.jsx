@@ -24,6 +24,7 @@ function Pokemon({ pokemon }) {
     }, [])
     return (
         <div className="container">
+            <center><h3><strong>Clicquez sur chaque pokemon pour plus de détails</strong></h3></center>
             <div className="row">
                 {
                     listePokemonData.map((item, index) => (

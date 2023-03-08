@@ -9,14 +9,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Description from './components/Description';
 
 // import 'bootstrap/dist/js/bootstrap.min.js';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
-
+    element: <App />,
+  },
+  {
+    path:"/view/:id",
+    element: <Description/>,
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
